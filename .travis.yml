@@ -6,4 +6,4 @@ before_install:
   - docker build -t vamsi/docker-react -f Dockefile.dev .
 
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true vamsi/docker-react npm run test
